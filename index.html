@@ -1,24 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Mortgage Calculator 2025</title>
-  <meta name="description" content="Use our free 2025 mortgage calculator to estimate your monthly home loan payments. Compare rates, terms, and get financial tips to optimize your mortgage.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mortgage Calculator (2025 Edition)</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f9ff;
-      padding: 20px;
-      color: #333;
+      background: #eef5fc;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+    }
+    .navbar a {
+      margin-left: 20px;
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: bold;
     }
     .container {
       max-width: 500px;
-      margin: auto;
+      margin: 40px auto;
       background: #fff;
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
     }
     input, select, button {
       width: 100%;
@@ -49,30 +65,27 @@
       border-radius: 8px;
       text-align: center;
     }
-    .email-popup input[type="email"] {
-      margin-top: 10px;
-    }
-    .seo-section {
-      margin-top: 40px;
-    }
-    .seo-section h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    .seo-section p {
-      line-height: 1.6;
-      font-size: 15px;
-    }
   </style>
 </head>
 <body>
+  <div class="navbar">
+    <div><strong>Mortgage Tools</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="article2.html">Fixed vs Variable</a>
+      <a href="article3.html">First-Time Buyer</a>
+      <a href="article4.html">Credit Score</a>
+      <a href="article5.html">Pre-Approval</a>
+    </div>
+  </div>
+
   <div class="container">
     <h2>Mortgage Calculator (2025 Edition)</h2>
     <label>Loan Amount (AUD):</label>
-    <input type="number" id="loanAmount" placeholder="e.g. 500000">
+    <input type="number" id="loanAmount" placeholder="e.g. 500000" />
 
     <label>Interest Rate (% Annual):</label>
-    <input type="number" id="interestRate" step="0.01" placeholder="e.g. 5.25">
+    <input type="number" id="interestRate" step="0.01" placeholder="e.g. 5.25" />
 
     <label>Loan Term:</label>
     <select id="loanTerm">
@@ -86,20 +99,10 @@
     <div class="result" id="monthlyPayment"></div>
 
     <div class="email-popup">
-      💡 Want more financial tools?
-      <br>
-      📩 Enter your email to receive a free mortgage guide!
-      <input type="email" placeholder="Enter your email">
+      📬 Want more financial tools?<br/>
+      Enter your email to receive a free mortgage guide!
+      <input type="email" placeholder="Enter your email" />
       <button>Subscribe Now</button>
-    </div>
-
-    <div class="seo-section">
-      <h3>5 Mortgage Tips You Need in 2025</h3>
-      <p><strong>1. Compare Rates Wisely:</strong> Don't settle for the first lender. Use our calculator to simulate multiple scenarios and find the best fit for your budget.</p>
-      <p><strong>2. Understand Total Cost:</strong> Your mortgage isn't just about the monthly payment. Look at interest over time and consider refinancing strategies.</p>
-      <p><strong>3. Fixed vs. Variable:</strong> In 2025, variable interest rates may still fluctuate heavily. Consider the pros and cons before locking in.</p>
-      <p><strong>4. Budget Beyond Mortgage:</strong> Don't forget insurance, taxes, maintenance, and unexpected fees. This tool helps you plan monthly cash flow more realistically.</p>
-      <p><strong>5. Use Affiliate Discounts:</strong> We partner with trusted lenders and financial services. Click below for exclusive mortgage offers and credit report tools.</p>
     </div>
   </div>
 
