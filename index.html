@@ -1,100 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Best Free Mortgage Loan Calculator 2025 (Repayment + Interest) | SmartTools</title>
-
-    <meta name="description" content="Use the best free mortgage calculator in 2025 to estimate your monthly repayment, total interest cost, amortization schedule, and loan impact instantly. Perfect for home buyers and financial planning." />
-    <meta name="keywords" content="mortgage calculator 2025, loan repayment calculator, home loan tool, interest rate calculator, mortgage interest, SmartTools" />
-    <meta name="author" content="SmartTools" />
-
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mobile.css" />
-
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; }
-        header, footer { width: 100%; padding: 15px 25px; background: #f7f7f7; border-bottom: 1px solid #e5e5e5; }
-        header a { text-decoration: none; margin-right: 18px; color: #333; font-weight: 600; }
-        header .brand { font-size: 20px; font-weight: 700; color: #1E88E5; }
-        footer { text-align: center; font-size: 14px; border-top: 1px solid #e5e5e5; margin-top: 60px; }
-        .content-wrapper { max-width: 900px; margin: 0 auto; padding: 25px; }
-        .ad-slot { margin: 25px 0; text-align: center; }
-        #guide h2, #guide h3 { margin-top: 22px; }
-        #guide ul { padding-left: 20px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Mortgage Calculator 2025</title>
+  <meta name="description" content="Use our free 2025 mortgage calculator to estimate your monthly home loan payments. Compare rates, terms, and get financial tips to optimize your mortgage.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f9ff;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background: #4a90e2;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    h2, .result {
+      text-align: center;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .email-popup {
+      margin-top: 30px;
+      padding: 15px;
+      background: #e7f2ff;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .email-popup input[type="email"] {
+      margin-top: 10px;
+    }
+    .seo-section {
+      margin-top: 40px;
+    }
+    .seo-section h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .seo-section p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+  </style>
 </head>
-
 <body>
+  <div class="container">
+    <h2>Mortgage Calculator (2025 Edition)</h2>
+    <label>Loan Amount (AUD):</label>
+    <input type="number" id="loanAmount" placeholder="e.g. 500000">
 
-<!-- ✅ SMARTTOOLS HEADER -->
-<header>
-    <a href="#" class="brand">SmartTools</a>
-    <a href="#">Tools</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-</header>
+    <label>Interest Rate (% Annual):</label>
+    <input type="number" id="interestRate" step="0.01" placeholder="e.g. 5.25">
 
-<div class="content-wrapper">
+    <label>Loan Term:</label>
+    <select id="loanTerm">
+      <option value="15">15 Years</option>
+      <option value="20">20 Years</option>
+      <option value="25">25 Years</option>
+      <option value="30">30 Years</option>
+    </select>
 
-    <!-- ✅ ORIGINAL MORTGAGE CALCULATOR TOOL -->
-    <h1>Mortgage Loan Calculator (2025 Updated)</h1>
-    <p>Enter your loan details below to calculate your monthly mortgage repayments.</p>
+    <button onclick="calculateMortgage()">Calculate Monthly Payment</button>
+    <div class="result" id="monthlyPayment"></div>
 
-    <!-- ======== TOOL UI START ======== -->
-    <!-- (Your original HTML tool layout stays here, unchanged) -->
-    <!-- KEEP YOUR EXISTING INPUTS, BUTTONS & SCRIPT -->
-    <!-- I am not modifying the functional part -->
-    <!-- ======== TOOL UI END ======== -->
-
-    <!-- ✅ AD SLOT #1 (below calculator) -->
-    <div class="ad-slot">
-        <!-- INSERT ADSENSE / AFFILIATE CODE HERE -->
-        <!-- Example placeholder -->
-        <p style="font-size:13px; color:#777;">Advertisement / Sponsored Content</p>
+    <div class="email-popup">
+      💡 Want more financial tools?
+      <br>
+      📩 Enter your email to receive a free mortgage guide!
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe Now</button>
     </div>
 
-    <!-- ✅ KNOWLEDGE SECTION (SEO + User Education) -->
-    <section id="guide">
-        <h2>How to Use This Mortgage Calculator</h2>
-        <p>This free mortgage calculator helps you estimate your monthly repayment based on loan amount, interest rate (APR), and loan term. It is designed for home buyers, refinancing decisions, or anyone planning long-term housing costs.</p>
+    <div class="seo-section">
+      <h3>5 Mortgage Tips You Need in 2025</h3>
+      <p><strong>1. Compare Rates Wisely:</strong> Don't settle for the first lender. Use our calculator to simulate multiple scenarios and find the best fit for your budget.</p>
+      <p><strong>2. Understand Total Cost:</strong> Your mortgage isn't just about the monthly payment. Look at interest over time and consider refinancing strategies.</p>
+      <p><strong>3. Fixed vs. Variable:</strong> In 2025, variable interest rates may still fluctuate heavily. Consider the pros and cons before locking in.</p>
+      <p><strong>4. Budget Beyond Mortgage:</strong> Don't forget insurance, taxes, maintenance, and unexpected fees. This tool helps you plan monthly cash flow more realistically.</p>
+      <p><strong>5. Use Affiliate Discounts:</strong> We partner with trusted lenders and financial services. Click below for exclusive mortgage offers and credit report tools.</p>
+    </div>
+  </div>
 
-        <h3>Step-by-Step</h3>
-        <ul>
-            <li><b>1. Enter the loan amount</b> — e.g. $450,000</li>
-            <li><b>2. Enter the annual interest rate</b> — e.g. 5.25%</li>
-            <li><b>3. Choose the loan term</b> — e.g. 30 years</li>
-            <li><b>4. Click “Calculate Repayments” to view your monthly costs</li>
-        </ul>
+  <script>
+    function calculateMortgage() {
+      const loanAmount = parseFloat(document.getElementById('loanAmount').value);
+      const annualInterest = parseFloat(document.getElementById('interestRate').value);
+      const years = parseInt(document.getElementById('loanTerm').value);
 
-        <h3>Tips to Reduce Your Mortgage Cost</h3>
-        <p>✅ Compare rates from multiple lenders — even a 0.5% difference can save tens of thousands in interest.</p>
-        <p>✅ Make extra principal payments when possible — this reduces total interest significantly.</p>
-        <p>✅ Shorter loan terms (e.g. 15 years) have higher monthly payments but much lower lifetime interest.</p>
+      if (isNaN(loanAmount) || isNaN(annualInterest)) {
+        alert('Please enter valid numbers');
+        return;
+      }
 
-        <h3>Fixed vs. Variable (Adjustable) Rate</h3>
-        <p><b>Fixed rate:</b> Stable monthly payment, safer for long-term budgeting.<br>
-        <b>Variable/adjustable rate:</b> Starts cheaper, but may increase over time depending on market conditions.</p>
+      const monthlyRate = annualInterest / 100 / 12;
+      const numberOfPayments = years * 12;
+      const monthlyPayment = loanAmount * monthlyRate / (1 - Math.pow(1 + monthlyRate, -numberOfPayments));
 
-        <h3>Want to Compare Real Mortgage Rates?</h3>
-        <p>You can check the latest 2025 mortgage offers here:</p>
-        <p><a href="#" style="color:#1E88E5; font-weight:600;">🔗 Compare mortgage lenders (affiliate link)</a></p>
-
-        <!-- ✅ AD SLOT #2 (inside SEO section) -->
-        <div class="ad-slot">
-            <p style="font-size:13px; color:#777;">Sponsored • Mortgage tools & services</p>
-        </div>
-    </section>
-
-</div>
-
-<!-- ✅ SMARTTOOLS FOOTER -->
-<footer>
-    © 2025 SmartTools — All rights reserved. | More tools coming soon.
-</footer>
-
-<script src="script.js"></script>
-
+      document.getElementById('monthlyPayment').innerText = `Estimated Monthly Payment: AUD $${monthlyPayment.toFixed(2)}`;
+    }
+  </script>
 </body>
 </html>
