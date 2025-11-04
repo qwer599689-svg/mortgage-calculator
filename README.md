@@ -1,8 +1,1 @@
-[article2.html](https://github.com/user-attachments/files/23321903/article2.html)
-[article3.html](https://github.com/user-attachments/files/23321904/article3.html)[styles.css](https://github.com/user-attachments/files/23321910/styles.css)
-[script.js](https://github.com/user-attachments/files/23321909/script.js)
-[index.html](https://github.com/user-attachments/files/23321908/index.html)
-![bg](https://github.com/user-attachments/assets/13386922-4ca9-462d-90a2-092a1aeb1262)
-[article6.html](https://github.com/user-attachments/files/23321907/article6.html)
-[article5.html](https://github.com/user-attachments/files/23321906/article5.html)
-[article4.html](https://github.com/user-attachments/files/23321905/article4.html)
+
