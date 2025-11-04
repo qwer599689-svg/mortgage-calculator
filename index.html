@@ -8,7 +8,140 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #eef5fc;
+      background: #eef5fc;<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mortgage Calculator (2025 Edition)</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile.css">
+  <style>
+    .navbar {
+      background: #fff;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar a {
+      margin-left: 20px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .ad-slot {
+      background: #f9f9f9;
+      border: 1px dashed #ccc;
+      padding: 20px;
+      text-align: center;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div><strong>Mortgage Tools</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="article2.html">Fixed vs Variable</a>
+      <a href="article3.html">First-Time Buyer</a>
+      <a href="article4.html">Credit Score</a>
+      <a href="article5.html">Pre-Approval</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="left-content">
+      <div class="header-container">
+        <h1>Mortgage Calculator</h1>
+        <button class="clear-all-btn">Clear All</button>
+      </div>
+      <form id="my-form">
+        <div class="mortgage-amount-container">
+          <label for="mortgage-amount">Mortgage Amount</label>
+          <div class="input-container">
+            <p>£</p>
+            <input type="text" id="mortgage-amount">
+          </div>
+        </div>
+        <div class="mortgage-term-container">
+          <label for="mortgage-term">Mortgage Term</label>
+          <div class="input-container">
+            <input type="text" id="mortgage-term">
+            <p>years</p>
+          </div>
+        </div>
+        <div class="interest-rate-container">
+          <label for="interest-rate">Interest Rate</label>
+          <div class="input-container">
+            <input type="text" id="interest-rate">
+            <p>%</p>
+          </div>
+        </div>
+        <div class="mortgage-type-container">
+          <label>Mortgage Type</label>
+          <div class="radio-input-container">
+            <input type="radio" name="mortgage-type" value="repayment">
+            <label>Repayment</label>
+          </div>
+          <div class="radio-input-container">
+            <input type="radio" name="mortgage-type" value="interest-only">
+            <label>Interest Only</label>
+          </div>
+        </div>
+      </form>
+
+      <button class="calculate-btn" type="submit" form="my-form">
+        <img src="assets/images/icon-calculator.svg" alt="calculator icon">
+        Calculate Repayments
+      </button>
+
+      <!-- 📍 Google Ad Slot (Left Content Area) -->
+      <div class="ad-slot">[ Google Ad Slot - Left Sidebar / Form Bottom ]</div>
+    </div>
+
+    <div class="right-content">
+      <!-- 📍 Google Ad Slot (Right Content Top) -->
+      <div class="ad-slot">[ Google Ad Slot - Right Content Top ]</div>
+
+      <div class="before-results-container">
+        <img src="assets/images/illustration-empty.svg" alt="payments illustrations">
+        <h2>Results shown here</h2>
+        <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+      </div>
+      <div class="after-results-container hidden">
+        <div class="results-header">
+          <h2>Your results</h2>
+          <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+        </div>
+        <div class="results-description">
+          <div class="results-monthly-repayments">
+            <span>Your monthly repayments</span>
+            <p id="monthly-repayments">£1,797.74</p>
+          </div>
+          <div class="line"></div>
+          <div class="results-total-over-term">
+            <span>Total you'll repay over the term</span>
+            <p id="total-over-the-term">£539,322.94</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 📍 Google Ad Slot (Bottom Footer Area) -->
+      <div class="ad-slot">[ Google Ad Slot - Page Footer Bottom ]</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
       margin: 0;
       padding: 0;
     }
@@ -107,22 +240,105 @@
   </div>
 
   <script>
-    function calculateMortgage() {
-      const loanAmount = parseFloat(document.getElementById('loanAmount').value);
-      const annualInterest = parseFloat(document.getElementById('interestRate').value);
-      const years = parseInt(document.getElementById('loanTerm').value);
+    function calculateMortgage() {<!DOCTYPE html>
+<html lang="en">
 
-      if (isNaN(loanAmount) || isNaN(annualInterest)) {
-        alert('Please enter valid numbers');
-        return;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile.css">
+  <title>Mortgage Repayment Calculator</title>
+</head>
 
-      const monthlyRate = annualInterest / 100 / 12;
-      const numberOfPayments = years * 12;
-      const monthlyPayment = loanAmount * monthlyRate / (1 - Math.pow(1 + monthlyRate, -numberOfPayments));
+<body>
 
-      document.getElementById('monthlyPayment').innerText = `Estimated Monthly Payment: AUD $${monthlyPayment.toFixed(2)}`;
-    }
-  </script>
+  <div class="main-content">
+    <div class="left-content">
+      <div class="header-container">
+        <h1>Mortgage Calculator</h1>
+        <button class="clear-all-btn">Clear All</button>
+      </div>
+      <form id="my-form">
+        <div class="mortgage-amount-container">
+          <label for="mortgage-amount">Mortgage Amount</label>
+          <div class="input-container">
+
+            <p>£</p>
+            <input type="text" id="mortgage-amount">
+          </div>
+        </div>
+        <div class="mortgage-term-container">
+          <label for="mortgage-term">Mortgage Term</label>
+          <div class="input-container">
+
+            <input type="text" id="mortgage-term">
+            <p>years</p>
+          </div>
+
+        </div>
+        <div class="interest-rate-container">
+          <label for="interest-rate">Interest Rate</label>
+          <div class="input-container">
+            <input type="text" id="interest-rate">
+            <p>%</p>
+
+          </div>
+
+        </div>
+        <div class="mortgage-type-container">
+
+          <label>Mortgage Type</label>
+
+          <div class="radio-input-container">
+            <input type="radio" name="mortgage-type" value="repayment">
+            <label>Repayment</label>
+
+          </div>
+          <div class="radio-input-container">
+            <input type="radio" name="mortgage-type" value="interest-only">
+            <label>Interest Only</label>
+
+          </div>
+        </div>
+      </form>
+      <button class="calculate-btn" type="submit" form="my-form">
+        <img src="assets/images/icon-calculator.svg" alt="calculator icon">
+        Calculate Repayments</button>
+    </div>
+    <div class="right-content">
+      <div class="before-results-container">
+        <img src="assets/images/illustration-empty.svg" alt="payments illustrations">
+        <h2>Results shown here</h2>
+        <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+      </div>
+      <div class="after-results-container hidden">
+        <div class="results-header">
+          <h2>Your results</h2>
+          <p>Your results are shown below based on the information you provided. To adjust the results, edit the form
+            and click “calculate repayments” again.</p>
+        </div>
+        <div class="results-description">
+          <div class="results-monthly-repayments">
+            <span>Your monthly repayments</span>
+            <p id="monthly-repayments">£1,797.74</p>
+          </div>
+          <div class="line"></div>
+          <div class="results-total-over-term">
+            <span>Total you'll repay over the term</span>
+            <p id="total-over-the-term">£539,322.94</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
+    
