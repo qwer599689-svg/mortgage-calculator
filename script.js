@@ -1,0 +1,1 @@
+// JavaScript for mortgage calculation and animation
